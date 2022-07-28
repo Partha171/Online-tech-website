@@ -1,0 +1,46 @@
+/* ------------
+  --carousol--  
+-------------*/
+
+.carousel-item::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    bottom: 0%;
+    right: 0%;
+    background: #121212;
+    opacity: 0.5;
+}
+
+
+/*------------
+   --cources--  
+ ------------*/
+
+.card {
+    max-width: 800px !important;
+}
+
+
+/*---------------------------------
+ --carousol fix for small devices--
+ ---------------------------------*/
+
+@media (max-width: 768px) {
+    .carousel-item img {
+        object-fit: cover;
+        height: 70vh;
+    }
+
+    .com {
+        display: none;
+    }
+}
+
+@media (max-width: 990px) {
+    .com {
+        display: none;
+    }
+}
